@@ -1,4 +1,5 @@
 ---
-# defaults file for services.lidarr
-
-published_port: 8080
+lidarr_config_path: ~/.config/lidarr/
+lidarr_data_path: ~/.local/share/containers/storage/media
+lidarr_timezone: Etc/UTC
+lidarr_web_port: 8686
