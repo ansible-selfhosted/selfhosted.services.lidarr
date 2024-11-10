@@ -1,0 +1,4 @@
+---
+# defaults file for services.lidarr
+
+published_port: 8080
