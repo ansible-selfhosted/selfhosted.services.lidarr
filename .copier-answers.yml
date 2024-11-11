@@ -1,8 +1,7 @@
----
 # Changes here will be overwritten by Copier
-_commit: 0.1.0
+_commit: 0.2.0
 _src_path: gh:ansible-selfhosted/selfhosted-role-template
-author_company: ""
+author_company: '""'
 author_email: git@speakintel.net
 author_name: SpeakinTelnet
 collection_name: services
@@ -10,6 +9,6 @@ copyright_holder: SpeakinTelnet
 license: MIT
 related_url: https://wiki.servarr.com/en/lidarr
 repository_host: github.com
-repository_url: https://github.com/ansible-selfhosted/selfhosted.services.lidarr.git
+repository_url: https://github.com/ansible-selfhosted/selfhosted.services.lidarr
 role_name: lidarr
 short_description: A role to deploy Lidarr using rootless Podman with systemd

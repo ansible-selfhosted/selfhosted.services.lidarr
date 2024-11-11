@@ -21,8 +21,7 @@ argument_specs:
         default: ~/.local/share/containers/storage/media
         description:
           - The path to the lidarr data directory
-          - It is recommended to share the same data directory with other
-            media managing services
+          - It is recommended to share the same data directory with other media managing services
       lidarr_timezone:
         type: str
         required: false
