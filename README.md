@@ -19,11 +19,12 @@ A role to deploy Lidarr using rootless Podman with systemd
 
 ## Role Arguments
 
-|Option|Description|Type|Required|Default|
-|---|---|---|---|---|
+|Option|Description|Type|Required|Default|choices|
+|---|---|---|---|---|---|
 |lidarr_config_path|The path to the lidarr configuration directory|str|False|~/.config/lidarr/|
 |lidarr_data_path|The path to the lidarr data directory<br>It is recommended to share the same data directory with other media managing services|str|False|~/.local/share/containers/storage/media|
 |lidarr_timezone|The timezone for the lidarr service|str|False|Etc/UTC|
+|lidarr_version|The version of Lidarr to use|str|False|latest|- latest<br>- develop<br>- nightly
 |lidarr_web_port|The port for the web server|int|False|8686|
 
 

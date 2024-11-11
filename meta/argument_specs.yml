@@ -28,6 +28,16 @@ argument_specs:
         default: Etc/UTC
         description:
           - The timezone for the lidarr service
+      lidarr_version:
+        type: str
+        required: false
+        default: latest
+        description:
+          - The version of Lidarr to use
+        choices:
+          - latest
+          - develop
+          - nightly
       lidarr_web_port:
         type: int
         required: false

@@ -2,4 +2,5 @@
 lidarr_config_path: ~/.config/lidarr/
 lidarr_data_path: ~/.local/share/containers/storage/media
 lidarr_timezone: Etc/UTC
+lidarr_version: latest
 lidarr_web_port: 8686

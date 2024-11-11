@@ -7,7 +7,7 @@ ContainerName=lidarr
 Environment=PUID=1000
 Environment=PGID=1000
 Environment=TZ={{ lidarr_timezone }}
-Image=lscr.io/linuxserver/lidarr:latest
+Image=lscr.io/linuxserver/lidarr:{{ lidarr_version }}
 PublishPort={{ lidarr_web_port }}:8686
 Volume={{ lidarr_config_path }}:/config
 Volume={{ lidarr_data_path }}:/data
