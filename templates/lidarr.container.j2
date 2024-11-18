@@ -13,7 +13,7 @@ Volume={{ lidarr_config_path }}:/config
 Volume={{ lidarr_data_path }}:/data
 
 [Service]
-Restart=unless-stopped
+Restart=always
 
 [Install]
-WantedBy=multi-user.targe
+WantedBy=multi-user.target default.target
