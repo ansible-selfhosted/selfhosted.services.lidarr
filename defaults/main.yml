@@ -1,6 +1,11 @@
 ---
+lidarr_additional_options: []
+lidarr_config_label: ''
 lidarr_config_path: ~/.config/lidarr/
+lidarr_data_label: ''
 lidarr_data_path: ~/.local/share/containers/storage/media
+lidarr_puid: 1000
+lidarr_pgid: 1000
 lidarr_timezone: Etc/UTC
 lidarr_version: latest
 lidarr_web_port: 8686

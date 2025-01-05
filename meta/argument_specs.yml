@@ -9,12 +9,34 @@ argument_specs:
     author:
       - SpeakinTelnet
     options:
+      lidarr_additional_options:
+        type: list
+        required: false
+        default: []
+        description:
+          - List of additional key=value for the quadlet container
+          - 'ex: - "Network=custom.network"'
+          - Can also be used to leave comments by preceding with a '#'
+      lidarr_config_label:
+        type: str
+        required: false
+        default: ""
+        description:
+          - The labels for to the lidarr config directory
+          - "Comma separated values (ex: rw,Z)"
       lidarr_config_path:
         type: str
         required: false
         default: ~/.config/lidarr/
         description:
           - The path to the lidarr configuration directory
+      lidarr_data_label:
+        type: str
+        required: false
+        default: ""
+        description:
+          - The labels for to the lidarr data directory
+          - "Comma separated values (ex: rw,Z)"
       lidarr_data_path:
         type: str
         required: false
@@ -22,6 +44,18 @@ argument_specs:
         description:
           - The path to the lidarr data directory
           - It is recommended to share the same data directory with other media managing services
+      lidarr_puid:
+        type: int
+        required: false
+        default: 1000
+        description:
+          - The user id to run the inside the lidarr container
+      lidarr_pgid:
+        type: int
+        required: false
+        default: 1000
+        description:
+          - The group id to run the inside the lidarr container
       lidarr_timezone:
         type: str
         required: false

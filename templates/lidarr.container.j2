@@ -4,13 +4,18 @@ Description=A music collection manager for Usenet and BitTorrent.
 [Container]
 AutoUpdate=registry
 ContainerName=lidarr
-Environment=PUID=1000
-Environment=PGID=1000
+Environment=PUID={{ lidarr_puid }}
+Environment=PGID={{ lidarr_pgid }}
 Environment=TZ={{ lidarr_timezone }}
 Image=lscr.io/linuxserver/lidarr:{{ lidarr_version }}
 PublishPort={{ lidarr_web_port }}:8686
-Volume={{ lidarr_config_path }}:/config:Z
-Volume={{ lidarr_data_path }}:/data:z
+Volume={{ lidarr_config_path }}:/config{% if lidarr_config_label|length > 0 %}:{{ lidarr_config_label }}{% endif %}
+
+Volume={{ lidarr_data_path }}:/data{% if lidarr_data_label|length > 0 %}:{{ lidarr_data_label }}{% endif %}
+
+{% for lidarr_var in lidarr_additional_options %}
+{{ lidarr_var }}
+{% endfor %}
 
 [Service]
 Restart=always
